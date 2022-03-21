@@ -1,0 +1,13 @@
+.all{
+    position:relative;
+    text-align:center
+}
+
+h1{
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.b1, .b2, .b3, .b4{
+    margin:20px;
+}
