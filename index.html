@@ -17,7 +17,7 @@
     class App extends React.Component {
       constructor(props) {
         super(props);
-        this.state = {name:'Yudai'};
+        this.state = {name:'Yudai',time:'Morning'};
       }
 
       handleClick1(name){
@@ -30,16 +30,16 @@
 
       render() {
         return (
-        <div>
+        <div class="all">
           <h1>Good {this.state.time}, {this.state.name}</h1>
 
-          <button onClick={()=>{this.handleClick1('Yudai')}}>Yudai</button>
+          <button class="b1" onClick={()=>{this.handleClick1('Yudai')}}>Yudai</button>
 
-          <button onClick={()=>{this.handleClick1('Naoki')}}>Naoki</button>
+          <button class="b2" onClick={()=>{this.handleClick1('Naoki')}}>Naoki</button>
 
-          <button onClick={()=>{this.handleClick2('Morning')}}>Morning</button>
+          <button class="b3" onClick={()=>{this.handleClick2('Morning')}}>Morning</button>
 
-          <button onClick={()=>{this.handleClick2('Night')}}>Night</button>
+          <button class="b4" onClick={()=>{this.handleClick2('Night')}}>Night</button>
         </div>
         );
       }
